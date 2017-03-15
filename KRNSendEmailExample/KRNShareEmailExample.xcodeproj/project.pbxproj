@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		442F66681E7952170011B987 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F66671E7952170011B987 /* main.m */; };
+		442F666B1E7952170011B987 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F666A1E7952170011B987 /* AppDelegate.m */; };
+		442F666E1E7952170011B987 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F666D1E7952170011B987 /* ViewController.m */; };
+		442F66711E7952170011B987 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442F666F1E7952170011B987 /* Main.storyboard */; };
+		442F66731E7952170011B987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442F66721E7952170011B987 /* Assets.xcassets */; };
+		442F66761E7952170011B987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442F66741E7952170011B987 /* LaunchScreen.storyboard */; };
+		442F667F1E7952680011B987 /* KRNSendEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F667D1E7952680011B987 /* KRNSendEmail.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		442F66631E7952170011B987 /* KRNShareEmailExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KRNShareEmailExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		442F66671E7952170011B987 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		442F66691E7952170011B987 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		442F666A1E7952170011B987 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		442F666C1E7952170011B987 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		442F666D1E7952170011B987 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		442F66701E7952170011B987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		442F66721E7952170011B987 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		442F66751E7952170011B987 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		442F66771E7952170011B987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442F667D1E7952680011B987 /* KRNSendEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KRNSendEmail.m; path = ../../KRNSendEmail/KRNSendEmail.m; sourceTree = "<group>"; };
+		442F667E1E7952680011B987 /* KRNSendEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRNSendEmail.h; path = ../../KRNSendEmail/KRNSendEmail.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		442F66601E7952170011B987 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		442F665A1E7952170011B987 = {
+			isa = PBXGroup;
+			children = (
+				442F66651E7952170011B987 /* KRNShareEmailExample */,
+				442F66641E7952170011B987 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		442F66641E7952170011B987 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				442F66631E7952170011B987 /* KRNShareEmailExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		442F66651E7952170011B987 /* KRNShareEmailExample */ = {
+			isa = PBXGroup;
+			children = (
+				442F667D1E7952680011B987 /* KRNSendEmail.m */,
+				442F667E1E7952680011B987 /* KRNSendEmail.h */,
+				442F66691E7952170011B987 /* AppDelegate.h */,
+				442F666A1E7952170011B987 /* AppDelegate.m */,
+				442F666C1E7952170011B987 /* ViewController.h */,
+				442F666D1E7952170011B987 /* ViewController.m */,
+				442F666F1E7952170011B987 /* Main.storyboard */,
+				442F66721E7952170011B987 /* Assets.xcassets */,
+				442F66741E7952170011B987 /* LaunchScreen.storyboard */,
+				442F66771E7952170011B987 /* Info.plist */,
+				442F66661E7952170011B987 /* Supporting Files */,
+			);
+			path = KRNShareEmailExample;
+			sourceTree = "<group>";
+		};
+		442F66661E7952170011B987 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				442F66671E7952170011B987 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		442F66621E7952170011B987 /* KRNShareEmailExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442F667A1E7952170011B987 /* Build configuration list for PBXNativeTarget "KRNShareEmailExample" */;
+			buildPhases = (
+				442F665F1E7952170011B987 /* Sources */,
+				442F66601E7952170011B987 /* Frameworks */,
+				442F66611E7952170011B987 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRNShareEmailExample;
+			productName = KRNShareEmailExample;
+			productReference = 442F66631E7952170011B987 /* KRNShareEmailExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		442F665B1E7952170011B987 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ulian_onua;
+				TargetAttributes = {
+					442F66621E7952170011B987 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = E8TPSF9L49;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 442F665E1E7952170011B987 /* Build configuration list for PBXProject "KRNShareEmailExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 442F665A1E7952170011B987;
+			productRefGroup = 442F66641E7952170011B987 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				442F66621E7952170011B987 /* KRNShareEmailExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		442F66611E7952170011B987 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442F66761E7952170011B987 /* LaunchScreen.storyboard in Resources */,
+				442F66731E7952170011B987 /* Assets.xcassets in Resources */,
+				442F66711E7952170011B987 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		442F665F1E7952170011B987 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442F667F1E7952680011B987 /* KRNSendEmail.m in Sources */,
+				442F666E1E7952170011B987 /* ViewController.m in Sources */,
+				442F666B1E7952170011B987 /* AppDelegate.m in Sources */,
+				442F66681E7952170011B987 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		442F666F1E7952170011B987 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442F66701E7952170011B987 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		442F66741E7952170011B987 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442F66751E7952170011B987 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		442F66781E7952170011B987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		442F66791E7952170011B987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		442F667B1E7952170011B987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E8TPSF9L49;
+				INFOPLIST_FILE = KRNShareEmailExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ulian-onua.KRNShareEmailExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		442F667C1E7952170011B987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E8TPSF9L49;
+				INFOPLIST_FILE = KRNShareEmailExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ulian-onua.KRNShareEmailExample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		442F665E1E7952170011B987 /* Build configuration list for PBXProject "KRNShareEmailExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442F66781E7952170011B987 /* Debug */,
+				442F66791E7952170011B987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442F667A1E7952170011B987 /* Build configuration list for PBXNativeTarget "KRNShareEmailExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442F667B1E7952170011B987 /* Debug */,
+				442F667C1E7952170011B987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 442F665B1E7952170011B987 /* Project object */;
+}

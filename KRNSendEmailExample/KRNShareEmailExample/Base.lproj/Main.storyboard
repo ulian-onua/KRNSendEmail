@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="ojg-p1-lNu">
+                                <rect key="frame" x="94" y="20" width="188" height="382.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfK-xS-DN2" userLabel="E-mail form">
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nOT-tN-J5d">
+                                        <rect key="frame" x="0.0" y="38.5" width="188" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="gYS-P5-UrN"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Thy-vB-XqD" userLabel="E-mail 2">
+                                        <rect key="frame" x="0.0" y="86.5" width="188" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="UT4-gf-mzf"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWU-vu-agW" userLabel="Subject">
+                                        <rect key="frame" x="0.0" y="134.5" width="188" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="7Tr-Ao-s4C"/>
+                                        </connections>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rk6-K7-eX3">
+                                        <rect key="frame" x="0.0" y="182.5" width="188" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="K1R-rn-K6w"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="self.layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="8dS-6N-XsW"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rk6-K7-eX3" firstAttribute="width" secondItem="ojg-p1-lNu" secondAttribute="width" id="1ty-xR-dMJ"/>
+                                    <constraint firstItem="nOT-tN-J5d" firstAttribute="width" secondItem="ojg-p1-lNu" secondAttribute="width" id="Nzu-zr-5hV"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXJ-Kw-UXw">
+                                <rect key="frame" x="38" y="15.5" width="40" height="30"/>
+                                <state key="normal" title="SEND"/>
+                                <connections>
+                                    <action selector="sendButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggn-1D-kxg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTI-rm-jc7">
+                                <rect key="frame" x="294" y="15" width="39" height="30"/>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <segue destination="AJ6-On-wA8" kind="show" id="trC-D2-qrU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ojg-p1-lNu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2So-JR-8Vn"/>
+                            <constraint firstItem="FTI-rm-jc7" firstAttribute="leading" secondItem="RfK-xS-DN2" secondAttribute="trailing" constant="12" id="Akh-O2-FTT"/>
+                            <constraint firstItem="RfK-xS-DN2" firstAttribute="leading" secondItem="mXJ-Kw-UXw" secondAttribute="trailing" constant="16" id="aIf-9n-xkz"/>
+                            <constraint firstItem="ojg-p1-lNu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aqL-Gk-JWA"/>
+                            <constraint firstItem="FTI-rm-jc7" firstAttribute="centerY" secondItem="mXJ-Kw-UXw" secondAttribute="centerY" id="hto-JJ-Haj"/>
+                            <constraint firstItem="ojg-p1-lNu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="qud-fJ-lh5"/>
+                            <constraint firstItem="mXJ-Kw-UXw" firstAttribute="centerY" secondItem="RfK-xS-DN2" secondAttribute="centerY" id="zab-jv-fA1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstEmail" destination="nOT-tN-J5d" id="ZiS-NC-p2h"/>
+                        <outlet property="message" destination="rk6-K7-eX3" id="leV-f1-JHL"/>
+                        <outlet property="secondEmail" destination="Thy-vB-XqD" id="6zO-M4-IBd"/>
+                        <outlet property="subject" destination="lWU-vu-agW" id="rV0-WF-bUK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135.19999999999999" y="137.18140929535232"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gST-On-Bn6">
+            <objects>
+                <viewController id="AJ6-On-wA8" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Apl-L9-NhP"/>
+                        <viewControllerLayoutGuide type="bottom" id="WLb-fW-rJ5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tM2-ti-OHF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="CRP-Kx-CsM">
+                                <rect key="frame" x="94" y="20" width="188" height="382.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail form" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wB-AV-kNw" userLabel="E-mail form">
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qno-xn-cR2">
+                                        <rect key="frame" x="0.0" y="38.5" width="188" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="AJ6-On-wA8" id="kku-0A-fcN"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PS1-Dp-M0b" userLabel="E-mail 2">
+                                        <rect key="frame" x="0.0" y="86.5" width="188" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="AJ6-On-wA8" id="KbF-ZE-pbf"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3C-85-VFB" userLabel="Subject">
+                                        <rect key="frame" x="0.0" y="134.5" width="188" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="AJ6-On-wA8" id="ncQ-uK-TOy"/>
+                                        </connections>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="deW-aQ-4RJ">
+                                        <rect key="frame" x="0.0" y="182.5" width="188" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="9le-9z-9RG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="self.layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="AJ6-On-wA8" id="uDk-BT-ZLp"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="deW-aQ-4RJ" firstAttribute="width" secondItem="CRP-Kx-CsM" secondAttribute="width" id="IFB-gn-Rvu"/>
+                                    <constraint firstItem="Qno-xn-cR2" firstAttribute="width" secondItem="CRP-Kx-CsM" secondAttribute="width" id="paA-dn-C2d"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3f-ei-sKa">
+                                <rect key="frame" x="38" y="16" width="40" height="30"/>
+                                <state key="normal" title="SEND"/>
+                                <connections>
+                                    <action selector="sendButtonPressed:" destination="AJ6-On-wA8" eventType="touchUpInside" id="kYV-1F-sjm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plJ-s6-43I">
+                                <rect key="frame" x="317" y="16" width="39" height="30"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="AJ6-On-wA8" eventType="touchUpInside" id="ioB-OX-jzr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CRP-Kx-CsM" firstAttribute="width" secondItem="tM2-ti-OHF" secondAttribute="width" multiplier="0.5" id="25K-3K-PaO"/>
+                            <constraint firstItem="2wB-AV-kNw" firstAttribute="leading" secondItem="V3f-ei-sKa" secondAttribute="trailing" constant="16" id="IQg-uk-DcA"/>
+                            <constraint firstItem="plJ-s6-43I" firstAttribute="leading" secondItem="2wB-AV-kNw" secondAttribute="trailing" constant="35" id="Qg1-AM-lBk"/>
+                            <constraint firstItem="CRP-Kx-CsM" firstAttribute="centerX" secondItem="tM2-ti-OHF" secondAttribute="centerX" id="UxH-vP-q9f"/>
+                            <constraint firstItem="CRP-Kx-CsM" firstAttribute="top" secondItem="Apl-L9-NhP" secondAttribute="bottom" id="VuA-w5-48d"/>
+                            <constraint firstItem="plJ-s6-43I" firstAttribute="centerY" secondItem="V3f-ei-sKa" secondAttribute="centerY" id="Vv3-dn-jmp"/>
+                            <constraint firstItem="V3f-ei-sKa" firstAttribute="centerY" secondItem="2wB-AV-kNw" secondAttribute="centerY" id="fpi-ps-RuF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstEmail" destination="Qno-xn-cR2" id="V1x-zr-g49"/>
+                        <outlet property="message" destination="deW-aQ-4RJ" id="Msf-x5-gzR"/>
+                        <outlet property="secondEmail" destination="PS1-Dp-M0b" id="ztS-ih-m8y"/>
+                        <outlet property="subject" destination="f3C-85-VFB" id="20E-C1-BsP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZqI-SH-dAc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="782" y="137"/>
+        </scene>
+    </scenes>
+</document>
