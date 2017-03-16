@@ -24,11 +24,9 @@
     [self.view endEditing:YES];
     if ([KRNSendEmail canSend]) {
         UIImage *image = [UIImage imageNamed:@"schoolFullImage"];
-        UIImage *image2 = [UIImage imageNamed:@"babyFullImage"];
         KRNImageAttachment *attachment = [KRNImageAttachment pngAttachmentWithImage:image andName:@"school"];
-        KRNImageAttachment *attachment2 = [KRNImageAttachment pngAttachmentWithImage:image2 andName:@"baby"];
 
-        [KRNSendEmail sendFromViewController:self toRecipients:@[_firstEmail.text, _secondEmail.text] withSubject:_subject.text withMessage:_message.text withAttachments:@[attachment, attachment2] withCompletion:^(KRNSendEmailResult result, NSError *error) {
+        [KRNSendEmail sendFromViewController:self toRecipients:@[_firstEmail.text, _secondEmail.text] withSubject:_subject.text withMessage:_message.text withAttachments:@[attachment] withCompletion:^(KRNSendEmailResult result, NSError *error) {
             if (error) {
                 NSLog(@"Error - %@", error.localizedDescription);
             } else {
