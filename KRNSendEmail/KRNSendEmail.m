@@ -24,6 +24,12 @@ static void(^completionBlock)(KRNSendEmailResult result, NSError *error);
 
 + (BOOL)sendFromViewController:(UIViewController *)viewController toRecipients:(NSArray<NSString *>*)recipients withSubject:(NSString *)subject withMessage:(NSString *)message withCompletion:(void(^)(KRNSendEmailResult result, NSError *error)) completion {
     
+    return [self sendFromViewController:viewController toRecipients:recipients withSubject:subject withMessage:message withAttachments:nil withCompletion:completion];
+   
+}
+
++ (BOOL)sendFromViewController:(UIViewController *)viewController toRecipients:(NSArray<NSString *>*)recipients withSubject:(NSString *)subject withMessage:(NSString *)message withAttachments:(NSArray<KRNEmailAttachment *> *)attachments withCompletion:(void(^)(KRNSendEmailResult result, NSError *error))completion {
+    
     completionBlock = completion;
     rootViewController = viewController;
     
@@ -47,6 +53,13 @@ static void(^completionBlock)(KRNSendEmailResult result, NSError *error);
     }
     if (message) {
         [mailController setMessageBody:message isHTML:NO];
+    }
+    if (attachments) {
+        for (KRNEmailAttachment *attachment in attachments) {
+            if ([attachment isKindOfClass:[KRNEmailAttachment class]]) {
+                [mailController addAttachmentData:attachment.data mimeType:attachment.mimeType fileName:attachment.filename];
+            }
+        }
     }
     
     [rootViewController presentViewController:mailController animated:YES completion:nil];

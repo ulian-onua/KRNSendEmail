@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "KRNSendEmail.h"
+#import "KRNImageAttachment.h"
 
 @interface ViewController ()<UITextFieldDelegate, UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *firstEmail;
@@ -22,11 +23,16 @@
 - (IBAction)sendButtonPressed:(id)sender {
     [self.view endEditing:YES];
     if ([KRNSendEmail canSend]) {
-        [KRNSendEmail sendFromViewController:self toRecipients:@[_firstEmail.text, _secondEmail.text] withSubject:_subject.text withMessage:_message.text withCompletion:^(KRNSendEmailResult result, NSError *error) {
+        UIImage *image = [UIImage imageNamed:@"schoolFullImage"];
+        UIImage *image2 = [UIImage imageNamed:@"babyFullImage"];
+        KRNImageAttachment *attachment = [KRNImageAttachment pngAttachmentWithImage:image andName:@"school"];
+        KRNImageAttachment *attachment2 = [KRNImageAttachment pngAttachmentWithImage:image2 andName:@"baby"];
+
+        [KRNSendEmail sendFromViewController:self toRecipients:@[_firstEmail.text, _secondEmail.text] withSubject:_subject.text withMessage:_message.text withAttachments:@[attachment, attachment2] withCompletion:^(KRNSendEmailResult result, NSError *error) {
             if (error) {
-                NSLog(@"Error - %@", error);
+                NSLog(@"Error - %@", error.localizedDescription);
             } else {
-                NSLog(@"Email successfully sent");
+                NSLog(@"%@", [KRNSendEmail sendEmailResultStringRepresentation:result]);
             }
         }];
     }

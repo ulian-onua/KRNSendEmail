@@ -14,6 +14,9 @@
 		442F66731E7952170011B987 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442F66721E7952170011B987 /* Assets.xcassets */; };
 		442F66761E7952170011B987 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442F66741E7952170011B987 /* LaunchScreen.storyboard */; };
 		442F667F1E7952680011B987 /* KRNSendEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F667D1E7952680011B987 /* KRNSendEmail.m */; };
+		4453B8991E79EAB200545562 /* KRNEmailAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4453B8981E79EAB200545562 /* KRNEmailAttachment.m */; };
+		4453B89C1E79EBA500545562 /* KRNImageAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4453B89B1E79EBA500545562 /* KRNImageAttachment.m */; };
+		4453B8A01E79EF0300545562 /* schoolFullImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 4453B89F1E79EF0300545562 /* schoolFullImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		442F66771E7952170011B987 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		442F667D1E7952680011B987 /* KRNSendEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KRNSendEmail.m; path = ../../KRNSendEmail/KRNSendEmail.m; sourceTree = "<group>"; };
 		442F667E1E7952680011B987 /* KRNSendEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRNSendEmail.h; path = ../../KRNSendEmail/KRNSendEmail.h; sourceTree = "<group>"; };
+		4453B8971E79EAB200545562 /* KRNEmailAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRNEmailAttachment.h; path = ../../KRNSendEmail/KRNEmailAttachment.h; sourceTree = "<group>"; };
+		4453B8981E79EAB200545562 /* KRNEmailAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KRNEmailAttachment.m; path = ../../KRNSendEmail/KRNEmailAttachment.m; sourceTree = "<group>"; };
+		4453B89A1E79EBA500545562 /* KRNImageAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KRNImageAttachment.h; path = ../../KRNSendEmail/KRNImageAttachment.h; sourceTree = "<group>"; };
+		4453B89B1E79EBA500545562 /* KRNImageAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KRNImageAttachment.m; path = ../../KRNSendEmail/KRNImageAttachment.m; sourceTree = "<group>"; };
+		4453B89F1E79EF0300545562 /* schoolFullImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = schoolFullImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 		442F665A1E7952170011B987 = {
 			isa = PBXGroup;
 			children = (
+				4453B89F1E79EF0300545562 /* schoolFullImage.png */,
 				442F66651E7952170011B987 /* KRNShareEmailExample */,
 				442F66641E7952170011B987 /* Products */,
 			);
@@ -63,6 +72,10 @@
 			children = (
 				442F667D1E7952680011B987 /* KRNSendEmail.m */,
 				442F667E1E7952680011B987 /* KRNSendEmail.h */,
+				4453B8971E79EAB200545562 /* KRNEmailAttachment.h */,
+				4453B8981E79EAB200545562 /* KRNEmailAttachment.m */,
+				4453B89A1E79EBA500545562 /* KRNImageAttachment.h */,
+				4453B89B1E79EBA500545562 /* KRNImageAttachment.m */,
 				442F66691E7952170011B987 /* AppDelegate.h */,
 				442F666A1E7952170011B987 /* AppDelegate.m */,
 				442F666C1E7952170011B987 /* ViewController.h */,
@@ -143,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4453B8A01E79EF0300545562 /* schoolFullImage.png in Resources */,
 				442F66761E7952170011B987 /* LaunchScreen.storyboard in Resources */,
 				442F66731E7952170011B987 /* Assets.xcassets in Resources */,
 				442F66711E7952170011B987 /* Main.storyboard in Resources */,
@@ -160,6 +174,8 @@
 				442F666E1E7952170011B987 /* ViewController.m in Sources */,
 				442F666B1E7952170011B987 /* AppDelegate.m in Sources */,
 				442F66681E7952170011B987 /* main.m in Sources */,
+				4453B89C1E79EBA500545562 /* KRNImageAttachment.m in Sources */,
+				4453B8991E79EAB200545562 /* KRNEmailAttachment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
